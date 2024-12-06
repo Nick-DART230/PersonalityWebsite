@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Personality Quiz</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+       <style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+#button {
+  margin-bottom: 30px; 
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #4CAF50; 
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+
+button:not(#button) {
+  padding: 50px; 
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #c2c2c2;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:not(#button):hover {
+  background-color: #9b9b9b;
+  transform: scale(1.05);
+}
+
+
+button:not(#button) {
+  display: grid;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  width: 100%;
+  max-width: 400px; 
+  justify-items: center;
+}
+       
+       
+       </style>
+    </head>
+    <body>
+        
+        <img id ="Julian" src="images/Capture.JPG">
+        <img id ="Ricky" src="images/Ricky.JPG">
+        <img id ="Bubbles" src="images/Bubbles.JPG">
+        <img id ="Lahey" src="images/Lahey.JPG">
+
+        <h1 id="heading">What Trailer Park Boys Character Are You?</h1>
+        
+        <button id="button" type="button">Click Here To Start</button>
+
+        <button id="buttonOne" type="button">Option 1</button>
+        <button id="buttonTwo" type="button">Option 2</button>
+        <button id="buttonThree" type="button">Option 3</button>
+        <button id="buttonFour" type="button">Option 4</button>
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        
+        <script src="script.js"> </script>
+
+    </body>
